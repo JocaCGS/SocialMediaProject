@@ -1,0 +1,17 @@
+.buttonprofile {
+    display: inline;
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+}
+
+span {
+    margin-left: 10px;
+}
