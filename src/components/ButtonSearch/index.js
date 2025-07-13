@@ -5,7 +5,7 @@ export default function ButtonMore() {
     return(
         <div>
             <button className="buttonmore">
-                <i className="bi bi-list"></i> More
+                <i className="bi bi-search"></i> Search
             </button>
         </div>
     )

@@ -48,14 +48,14 @@ function Feed() {
             </div>
           </div>
         </div>
-        <div className='feed-div'>
-          <div className='feed-content1'>
-            <div className="feed-header">
+        <div className='trending-div'>
+          <div className='trending-content1'>
+            <div className="trending-header">
               <div>
-                <span className='titlefeed'>Feed</span><br />
-                <span className='subtitlefeed'>Explore. Create</span>
+                <span className='titletrending'>Trending</span><br />
+                <span className='subtitletrending'>See what's new</span>
               </div>
-              <ButtonNewPost/>
+              <SearchBar/>
             </div>
           </div>
         </div>

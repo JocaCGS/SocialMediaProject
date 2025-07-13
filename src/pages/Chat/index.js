@@ -10,52 +10,28 @@ import SearchBar from  '../../components/SearchBar'
 import ButtonTrending from  '../../components/ButtonTrending'
 import ButtonSearch from  '../../components/ButtonSearch'
 import ButtonNewPost from  '../../components/ButtonNewPost'
+import { Link } from 'react-router-dom';
+  
 
 
 function Feed() {
   return (
       <div className="wholepage">
-        <div className='nav-div'>
-          <div className='nav-content'>
+        <div className='chatnav-div'>
+          <div className='chatnav-content'>
             <h3>S.M. Project</h3>
-            <div className='nav-content'>
-              <h4>Navigate</h4>
-              <div>
-                <ButtonHome/>
-              </div>
-              <div>
-                <ButtonMessages/> 
-              </div>
-              <div>
-                <ButtonNotifications/> 
-              </div>
-              <div>
-                <ButtonProfile/> 
-              </div>
-              <div>
-                <ButtonMore/> 
-              </div>
-            </div>
-            <div className='nav-content2'>
-              <h4>Discover</h4>
-              <div>
-                <ButtonTrending/>
-              </div>
-              <div>
-                <ButtonSearch/>
-              </div>
-                
+            <div className='chatnav-content'>
+              <h3>Messages</h3>
+              <SearchBar/>
+              <span><span className='nofriendstext'>Huh. There's nothing here... Try</span><Link to="/feed"> finding </Link>  <span className='nofriendstext'> someone to chat with!</span>  </span>
             </div>
           </div>
         </div>
-        <div className='feed-div'>
-          <div className='feed-content1'>
-            <div className="feed-header">
+        <div className='chat-div'>
+          <div className='chat-content1'>
+            <div className="chat-header">
               <div>
-                <span className='titlefeed'>Feed</span><br />
-                <span className='subtitlefeed'>Explore. Create</span>
               </div>
-              <ButtonNewPost/>
             </div>
           </div>
         </div>

@@ -1,18 +1,17 @@
 import { useNavigate } from 'react-router-dom';
 import './style.css';
 
-export default function ButtonMessages() {
+export default function ButtonTrending() {
     const navigate = useNavigate(); 
 
     const handleClick = () => {
-        navigate('/chat');
+        navigate('/trending');
     };
     return(
         <div>
-            <button className="buttonmessages" onClick={handleClick}>
-                <i className="bi bi-chat"></i> Messages
+            <button className="buttonmore" onClick={handleClick}>
+                <i className="bi bi-graph-up"></i> Trending
             </button>
         </div>
-        
     )
 }

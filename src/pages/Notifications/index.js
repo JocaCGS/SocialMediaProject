@@ -48,14 +48,13 @@ function Feed() {
             </div>
           </div>
         </div>
-        <div className='feed-div'>
-          <div className='feed-content1'>
-            <div className="feed-header">
+        <div className='notif-div'>
+          <div className='notif-content1'>
+            <div className="notif-header">
               <div>
-                <span className='titlefeed'>Feed</span><br />
-                <span className='subtitlefeed'>Explore. Create</span>
+                <span className='titlenotif'>Notifications</span><br />
+                <span className='subtitlenotif'>It's for you.</span>
               </div>
-              <ButtonNewPost/>
             </div>
           </div>
         </div>

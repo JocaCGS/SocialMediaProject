@@ -1,6 +1,6 @@
 .searchdiv{
-    background-color: #1f1f1f;
-    border: none;
+    background-color: #ffffff;
+    border: 1px solid #d4d4d4;
     width: 350px;
     border-radius: 15px;
     height: 40px;
@@ -11,7 +11,7 @@
     
     
 .searchbox {
-    background-color: #1f1f1f;
+    background-color: #ffffff;
     height: 27px;
     border: none;
     width: 80%;
@@ -20,12 +20,17 @@
 
 .buttonsearch {
     display: inline;
-    background-color: #1f1f1f;
+    background-color: #ffffff;
     border: none;
     border-radius: 15px;
     width: auto;
     height: 40px;
     cursor: pointer;
     font-size: larger;
-    color: white;
+    color: rgb(0, 0, 0);
+}
+
+.searchbox:focus {
+  outline: none;
+  box-shadow: none; /* opcional, remove sombras de foco em alguns navegadores */
 }

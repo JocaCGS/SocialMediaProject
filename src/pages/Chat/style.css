@@ -15,19 +15,19 @@ html, body {
     height: 97vh;
 }
   
-.nav-div {
+.chatnav-div {
     display: flex;
     flex: 1;
     background-color: #ffffff;
     flex-direction: column;
     padding: 20px;
-    border-right: 1px solid #68d4f0;
+    border: none;
     flex-direction: column;
 
 }
 
 
-.nav-content {
+.chatnav-content {
     flex:3;
     color: rgb(0, 0, 0);
     flex-direction: column;
@@ -37,7 +37,7 @@ html, body {
 }
 
 
-.nav-content2 {
+.chatnav-content2 {
     flex:7;
     color: rgb(0, 0, 0);
     flex-direction: column;
@@ -47,9 +47,9 @@ html, body {
 
 }
 
-.feed-div {
+.chat-div {
     flex: 5;
-    background-color: #ffffff;
+    background-color: #eeeeee;
     border-radius: 10px;
     padding: 30px;
     color: rgb(0, 0, 0);
@@ -57,7 +57,7 @@ html, body {
     flex-direction: row;
 }
 
-.feed-header {
+.chat-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,7 +66,7 @@ html, body {
 
 
 
-.feed-content1 {
+.chat-content1 {
     color: rgb(0, 0, 0);
     display: flex;
     flex: 2;
@@ -138,6 +138,10 @@ margin-left: 20px;
     color: #7c7c7c;
 }
 
+.nofriendstext {
+    color: #7c7c7c;
+}
+
 
 h3 {
     margin: 0;
@@ -150,4 +154,9 @@ h4 {
     padding: 0;
     height: 9px;
     margin-left: -10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(84, 202, 202);
 }

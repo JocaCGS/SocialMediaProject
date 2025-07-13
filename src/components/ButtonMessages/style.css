@@ -1,6 +1,6 @@
 .buttonmessages {
     display: inline;
-    background-color: #1f1f1f;
+    background-color: #ffffff;
     border: none;
     width: 150px;
     border-radius: 15px;
@@ -9,8 +9,10 @@
     cursor: pointer;
     margin-left: 10px;
     font-size: larger;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
+    position: absolute;
+    left: 2px;
 }
 
 span {

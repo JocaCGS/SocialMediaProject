@@ -1,15 +1,17 @@
 .buttonhome {
     display: inline;
-    background-color: #1f1f1f;
+    background-color: #ffffff;
     border: none;
     border-radius: 15px;
     height: 40px;
     cursor: pointer;
     margin-left: 10px;
     font-size: larger;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     justify-content: center;
+    position: absolute;
+    left: 10px;
 }
 
 span {
