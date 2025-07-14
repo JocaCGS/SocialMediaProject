@@ -15,6 +15,15 @@ function App() {
       <br/>
       <br/>
       <Link to="/chat">Ir para Chat</Link>
+      <br/>
+      <br/>
+      <Link to="/login">Ir para Login</Link>
+      <br/>
+      <br/>
+      <Link to="/signup">Ir para  SignUp</Link>
+      <br/>
+      <br/>
+      <Link to="/forgotpassword">Ir para ForgotPassword</Link>
     </div>
   );
 }

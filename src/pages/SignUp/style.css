@@ -5,7 +5,7 @@ html, body {
     font-family: 'Inter', sans-serif;
   }
 
-.login-page {
+.signup-page {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -15,7 +15,7 @@ html, body {
 }
 
 
-.login-box h2 {
+.signup-box h2 {
   margin-bottom: 15px;
   font-size: 60px;
   font-weight: 600;
@@ -24,30 +24,46 @@ html, body {
   left: 35%;
 }
 
-.login-box h3 {
+.signup-box h3 {
   margin: 5px 0 10px;
   font-size: 18px;
   font-weight: 500;
   color: #333333;
+  position: absolute;
+  left: 39.5%;
+  top: 40%;
 }
 
-.login-box h4 {
+.signup-box h4 {
+position: absolute;
+top: 47%;
+left: 40%
+
+}
+
+.signup-box h5 {
   margin: 5px 0 10px;
   font-size: 18px;
   font-weight: 500;
   color: #000000;
   position: absolute;
-  top: 70%;
+  top: 78%;
+  left: 39.5%;
 }
 
-.login-box p {
+.signup-box p {
   font-size: 14px;
   color: #555555;
   margin-bottom: 20px;
+  position: absolute;
+  left: 39.5%;
+  top: 41.5%;
 }
 
-.login-input {
-  width: 100%;
+.signup-input {
+  width: 200%;       
+  margin: 0 auto;     
+  display: block;     
   padding: 12px 14px;
   border-radius: 8px;
   border: 1px solid #dcdcdc;
@@ -56,26 +72,21 @@ html, body {
   transition: border-color 0.2s;
 }
 
-.login-input:focus {
+
+.signup-input:focus {
   outline: none;
   border-color: #68d4f0;
 }
 
-.login-forgot-password {
-  position: absolute;
-  top: 58%;
-  left: 51%;
-}
-
-.login-login {
+.signup-register {
    position: absolute;
    left: 40%; 
-   top: 63%
+   top: 72%
 }
 
-.login-signup {
-   position: absolute;
-   left: 50.5%; 
-   top: 70.5%;
+.signup-haveanaccount {
+    position: absolute;
+   left: 51.5%; 
+   top: 78.5%
 }
 

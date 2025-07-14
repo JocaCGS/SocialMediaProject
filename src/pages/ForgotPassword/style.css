@@ -5,7 +5,7 @@ html, body {
     font-family: 'Inter', sans-serif;
   }
 
-.login-page {
+.forgotpassword-page {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -15,7 +15,7 @@ html, body {
 }
 
 
-.login-box h2 {
+.forgotpassword-box h2 {
   margin-bottom: 15px;
   font-size: 60px;
   font-weight: 600;
@@ -24,29 +24,30 @@ html, body {
   left: 35%;
 }
 
-.login-box h3 {
+.forgotpassword-box h3 {
   margin: 5px 0 10px;
   font-size: 18px;
   font-weight: 500;
   color: #333333;
 }
 
-.login-box h4 {
+.forgotpassword-box h4 {
   margin: 5px 0 10px;
   font-size: 18px;
   font-weight: 500;
   color: #000000;
   position: absolute;
-  top: 70%;
+  left: 40%; 
+  top: 62%
 }
 
-.login-box p {
+.forgotpassword-box p {
   font-size: 14px;
   color: #555555;
   margin-bottom: 20px;
 }
 
-.login-input {
+.forgotpassword-input {
   width: 100%;
   padding: 12px 14px;
   border-radius: 8px;
@@ -56,26 +57,20 @@ html, body {
   transition: border-color 0.2s;
 }
 
-.login-input:focus {
+.forgotpassword-input:focus {
   outline: none;
   border-color: #68d4f0;
 }
 
-.login-forgot-password {
-  position: absolute;
-  top: 58%;
-  left: 51%;
-}
-
-.login-login {
+.forgotpassword-resetpassword {
    position: absolute;
    left: 40%; 
-   top: 63%
+   top: 57%
 }
 
-.login-signup {
-   position: absolute;
-   left: 50.5%; 
-   top: 70.5%;
+.forgotpassword-haveanaccount {
+    position: absolute;
+    left: 57.5%; 
+    top: 62.5%
 }
 
