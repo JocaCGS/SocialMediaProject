@@ -1,20 +1,19 @@
-import React, { useState } from 'react';
-import './style.css';
-import { useNavigate } from 'react-router-dom'; // ✅ Importa o hook
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { ButtonSignUpStyled } from './style.js';
 
 export default function ButtonSignUp() {
-     const navigate = useNavigate(); // ✅ Instancia o hook
+    const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/signup'); // ✅ Redireciona para /signup
+        navigate('/signup');
     };
 
-    return(
+    return (
         <div>
-            <button className="buttonsignup" onClick={handleClick}>
-                 Sign Up
-        </button>
+            <ButtonSignUpStyled onClick={handleClick}>
+                Sign Up
+            </ButtonSignUpStyled>
         </div>
-        
-    )
+    );
 }

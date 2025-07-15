@@ -1,18 +1,20 @@
-import { useNavigate } from 'react-router-dom'; // ✅ Importa o hook
-import './style.css';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { ButtonHomeStyled, ButtonHomeText } from './style.js';
 
 export default function ButtonHome() {
-    const navigate = useNavigate(); // ✅ Instancia o hook
+    const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/feed'); // ✅ Redireciona para /feed
+        navigate('/feed');
     };
 
     return (
         <div>
-            <button className="buttonhome" onClick={handleClick}>
-                <i className="bi bi-house"></i> Home
-            </button>
+            <ButtonHomeStyled onClick={handleClick}>
+                <i className="bi bi-house"></i>
+                <ButtonHomeText className="buttonhometext">Home</ButtonHomeText>
+            </ButtonHomeStyled>
         </div>
     );
 }

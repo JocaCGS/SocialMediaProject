@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import './style.css';
+import React from 'react';
+import { TrendingDiv, TrendingTitle } from './style.js';
 
 export default function ButtonProfile() {
-    return(
-        <div className='trendingdiv'>
-            <h1>Trending</h1>
-        </div>
-    )
+  return (
+    <TrendingDiv>
+      <TrendingTitle>Trending</TrendingTitle>
+    </TrendingDiv>
+  );
 }

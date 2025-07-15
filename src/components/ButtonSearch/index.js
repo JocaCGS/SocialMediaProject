@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
-import './style.css';
+import React from 'react';
+import { ButtonSearchStyled, ButtonSearchText } from './style.js';
 
-export default function ButtonMore() {
-    return(
+export default function ButtonSearch() {
+    return (
         <div>
-            <button className="buttonmore">
-                <i className="bi bi-search"></i> Search
-            </button>
+            <ButtonSearchStyled>
+                <i className="bi bi-search"></i>
+                <ButtonSearchText>Search</ButtonSearchText>
+            </ButtonSearchStyled>
         </div>
-    )
+    );
 }

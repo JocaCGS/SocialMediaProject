@@ -1,4 +1,6 @@
-.buttonhaveanaccount {
+import styled from 'styled-components';
+
+export const ButtonHaveAnAccountStyled = styled.button`
     display: inline;
     background-color: transparent; 
     border: none;                  
@@ -13,4 +15,4 @@
     align-self: flex-end;
     outline: none;                 
     padding: 0;                    
-}
+`;

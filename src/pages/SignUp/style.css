@@ -1,92 +1,66 @@
 html, body {
-    height: 100%;
-    margin: 0;
-    background-color: rgb(255, 255, 255);
-    font-family: 'Inter', sans-serif;
-  }
+  height: 100%;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Inter', sans-serif;
+}
 
-.signup-page {
-  width: 100%;
-  min-height: 100vh;
+.signup-page * {
+  margin: 3px;
+}
+
+.signup-title h1{
   display: flex;
+  font-size: 4vw;
+  margin-bottom: 20px;
   justify-content: center;
   align-items: center;
-  padding: 0;
 }
 
-
-.signup-box h2 {
-  margin-bottom: 15px;
-  font-size: 60px;
-  font-weight: 600;
-  top: 20%;
-  position: absolute;
-  left: 35%;
+.signup-subtitle {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
-.signup-box h3 {
-  margin: 5px 0 10px;
-  font-size: 18px;
-  font-weight: 500;
-  color: #333333;
-  position: absolute;
-  left: 39.5%;
-  top: 40%;
+.signuptext {
+font-size: 16px;
+font-weight: bold;
 }
 
-.signup-box h4 {
-position: absolute;
-top: 47%;
-left: 40%
-
+.signuptext2 {
+font-size: 12px;
 }
 
-.signup-box h5 {
-  margin: 5px 0 10px;
-  font-size: 18px;
-  font-weight: 500;
-  color: #000000;
-  position: absolute;
-  top: 78%;
-  left: 39.5%;
+.signup-page {
+width: 100%;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0;
 }
 
-.signup-box p {
-  font-size: 14px;
-  color: #555555;
-  margin-bottom: 20px;
-  position: absolute;
-  left: 39.5%;
-  top: 41.5%;
+.signup-box {
+width: 600px;
+height: 600px;
 }
 
 .signup-input {
-  width: 200%;       
-  margin: 0 auto;     
-  display: block;     
-  padding: 12px 14px;
-  border-radius: 8px;
-  border: 1px solid #dcdcdc;
-  font-size: 14px;
-  margin-bottom: 14px;
-  transition: border-color 0.2s;
+display: flex;
+flex-direction: column;
+gap: 2px;
+
+justify-content: center;
+align-items: center;
 }
 
+.signup-signup {
+display: flex;
+align-items: center;
+gap: 8px; 
 
-.signup-input:focus {
-  outline: none;
-  border-color: #68d4f0;
+justify-content: center;
+align-items: center;
 }
-
-.signup-register {
-   position: absolute;
-   left: 40%; 
-   top: 72%
-}
-
-.signup-haveanaccount {
-    position: absolute;
-   left: 51.5%; 
-   top: 78.5%
-}
-

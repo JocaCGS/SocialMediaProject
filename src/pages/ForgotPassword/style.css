@@ -1,76 +1,66 @@
 html, body {
-    height: 100%;
-    margin: 0;
-    background-color: rgb(255, 255, 255);
-    font-family: 'Inter', sans-serif;
-  }
+  height: 100%;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Inter', sans-serif;
+}
+
+.forgotpassword-page * {
+margin: 3px;
+}
+
+.forgotpassword-title h1{
+display: flex;
+font-size: 4vw;
+margin-bottom: 20px;
+justify-content: center;
+align-items: center;
+}
+
+.forgotpassword-subtitle {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.forgotpasswordtext {
+font-size: 16px;
+font-weight: bold;
+}
+
+.forgotpasswordtext2 {
+font-size: 12px;
+}
 
 .forgotpassword-page {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
+width: 100%;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0;
 }
 
-
-.forgotpassword-box h2 {
-  margin-bottom: 15px;
-  font-size: 60px;
-  font-weight: 600;
-  top: 20%;
-  position: absolute;
-  left: 35%;
-}
-
-.forgotpassword-box h3 {
-  margin: 5px 0 10px;
-  font-size: 18px;
-  font-weight: 500;
-  color: #333333;
-}
-
-.forgotpassword-box h4 {
-  margin: 5px 0 10px;
-  font-size: 18px;
-  font-weight: 500;
-  color: #000000;
-  position: absolute;
-  left: 40%; 
-  top: 62%
-}
-
-.forgotpassword-box p {
-  font-size: 14px;
-  color: #555555;
-  margin-bottom: 20px;
+.forgotpassword-box {
+width: 600px;
+height: 600px;
 }
 
 .forgotpassword-input {
-  width: 100%;
-  padding: 12px 14px;
-  border-radius: 8px;
-  border: 1px solid #dcdcdc;
-  font-size: 14px;
-  margin-bottom: 14px;
-  transition: border-color 0.2s;
+display: flex;
+flex-direction: column;
+gap: 2px;
+
+justify-content: center;
+align-items: center;
 }
 
-.forgotpassword-input:focus {
-  outline: none;
-  border-color: #68d4f0;
-}
+.forgotpassword-signup {
+display: flex;
+align-items: center;
+gap: 8px; 
 
-.forgotpassword-resetpassword {
-   position: absolute;
-   left: 40%; 
-   top: 57%
+justify-content: center;
+align-items: center;
 }
-
-.forgotpassword-haveanaccount {
-    position: absolute;
-    left: 57.5%; 
-    top: 62.5%
-}
-

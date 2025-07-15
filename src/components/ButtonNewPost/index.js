@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import './style.css';
+import React from 'react';
+import { ButtonNewPostStyled, ButtonNewPostText } from './style.js';
 
 export default function ButtonNewPost() {
-    return(
+    return (
         <div>
-            <button className="buttonnewpost">
-                <i className="bi bi-plus"></i> Create new post
-        </button>
+            <ButtonNewPostStyled>
+                <i className="bi bi-plus"></i>
+                <ButtonNewPostText>Create new post</ButtonNewPostText>
+            </ButtonNewPostStyled>
         </div>
-        
-    )
+    );
 }

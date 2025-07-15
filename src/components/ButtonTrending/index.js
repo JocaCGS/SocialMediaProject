@@ -1,17 +1,20 @@
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './style.css';
+import { ButtonTrendingStyled, ButtonTrendingText } from './style.js';
 
 export default function ButtonTrending() {
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
 
     const handleClick = () => {
         navigate('/trending');
     };
-    return(
+
+    return (
         <div>
-            <button className="buttonmore" onClick={handleClick}>
-                <i className="bi bi-graph-up"></i> Trending
-            </button>
+            <ButtonTrendingStyled onClick={handleClick}>
+                <i className="bi bi-graph-up"></i>
+                <ButtonTrendingText>Trending</ButtonTrendingText>
+            </ButtonTrendingStyled>
         </div>
-    )
+    );
 }

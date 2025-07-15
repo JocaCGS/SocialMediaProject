@@ -1,74 +1,42 @@
-import React, { Profiler } from 'react';
-import './style.css'; // importando o CSS local da página (opcional)
-import FormPost from  '../../components/FormPost'
-import ButtonHome from  '../../components/ButtonHome'
-import ButtonNotifications from  '../../components/ButtonNotifications'
-import ButtonMessages from  '../../components/ButtonMessages'
-import ButtonProfile from  '../../components/ButtonProfile'
-import ButtonMore from  '../../components/ButtonMore'
-import SearchBar from  '../../components/SearchBar'
-import ButtonTrending from  '../../components/ButtonTrending'
-import ButtonSearch from  '../../components/ButtonSearch'
-import ButtonNewPost from  '../../components/ButtonNewPost'
-import ButtonLogin from  '../../components/ButtonLogin'
-import ButtonSignUp from  '../../components/ButtonSignUp'
-import ButtonRegister from  '../../components/ButtonRegister'
-import ButtonHaveAnAccount from  '../../components/ButtonHaveAnAccount'
-import ButtonForgotPassword from  '../../components/ButtonForgotPassword'
+import React from 'react';
+import './style.css';
+import ButtonLogin from '../../components/ButtonLogin';
+import ButtonSignUp from '../../components/ButtonSignUp';
+import ButtonForgotPassword from '../../components/ButtonForgotPassword';
+import PasswordBox from '../../components/PasswordBox';
+import ConfirmPasswordBox from '../../components/ConfirmPasswordBox';
+import UsernameBox from '../../components/UsernameBox';
+import NameBox from '../../components/NameBox';
+import ButtonRegister from '../../components/ButtonRegister';
+import ButtonHaveAnAccount from '../../components/ButtonHaveAnAccount';
 
-export default function SignUp(){
-    return (
-         <div className="signup-page">
-            <div className="signup-box">
-                <h2>Social Media Project</h2>
-                <h3>Create your Account</h3>
-                <p>It's just for a few minutes, for free!</p>
+export default function SignUp() {
+  return (
+    <div className="signup-page">
+      <div className="signup-box">
 
-                <h4>
-                <input
-                    type="text"
-                    placeholder="Name"
-                    className="signup-input"
-                />
+        <div className="signup-title">
+          <h1>Social Media Project</h1>
+        </div> 
 
-                <input
-                    type="email"
-                    placeholder="Email"
-                    className="signup-input"
-                />
+        <div className="signup-subtitle">
+          <span className='signuptext'>Create your Account</span>
+          <span className='signuptext2'>It's only a few minutes, for free!</span>
+        </div>
 
-                <input
-                    type="password"
-                    placeholder="Password"
-                    className="signup-input"
-                />
+        <div className='signup-input'>
+          <NameBox/>
+          <UsernameBox/>
+          <PasswordBox/>
+          <ConfirmPasswordBox/>
+          <ButtonRegister />
+        </div>
 
-                <input
-                    type="password"
-                    placeholder="Confirm Password"
-                    className="signup-input"
-                />
-                </h4>
+        <div className="signup-signup">
+          Already have an account? <ButtonHaveAnAccount />
+        </div>
 
-                <div className="signup-register">
-                    <ButtonRegister />
-                </div>
-
-                <h5>Already have an account?</h5>
-
-                <div className="signup-haveanaccount">
-                    <ButtonHaveAnAccount />
-                </div>
-
-              </div>
-            </div>
-    );
+      </div>
+    </div>
+  );
 }
-
-const hardcodedprofile = {
-  firstName: "Walter",
-  lastName: "White",
-  age: 52,
-  id: 1
-}
-

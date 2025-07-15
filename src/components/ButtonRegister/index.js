@@ -1,20 +1,19 @@
-import React, { useState } from 'react';
-import './style.css';
-import { useNavigate } from 'react-router-dom'; // ✅ Importa o hook
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { ButtonRegisterStyled } from './style.js';
 
 export default function ButtonRegister() {
-     const navigate = useNavigate(); // ✅ Instancia o hook
+    const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/login'); // ✅ Redireciona para /login
+        navigate('/login');
     };
 
-    return(
+    return (
         <div>
-            <button className="buttonregister" onClick={handleClick}>
-                 CREATE ACCOUNT
-        </button>
+            <ButtonRegisterStyled onClick={handleClick}>
+                CREATE ACCOUNT
+            </ButtonRegisterStyled>
         </div>
-        
-    )
+    );
 }

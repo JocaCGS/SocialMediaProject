@@ -151,3 +151,9 @@ h4 {
     height: 9px;
     margin-left: -10px;
 }
+
+@media (max-width: 680px) {
+    h3 {
+        display: none;
+    }
+}

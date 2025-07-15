@@ -41,10 +41,9 @@ function Feed() {
               <div>
                 <ButtonTrending/>
               </div>
-              <div>
+              <div className='btnsearchmedia'>
                 <ButtonSearch/>
               </div>
-                
             </div>
           </div>
         </div>

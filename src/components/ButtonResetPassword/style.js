@@ -1,4 +1,8 @@
-.buttonregister {
+import styled from 'styled-components';
+
+// ... outros botões
+
+export const ButtonResetPasswordStyled = styled.button`
     display: inline;
     background-color: #000000;
     border: none;
@@ -7,11 +11,7 @@
     height: 35px;
     cursor: pointer;
     font-size: large;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     font-weight: bold;
-    align-self:flex-end;
-}
-
-span {
-    margin-left: 10px;
-}
+    align-self: flex-end;
+`;

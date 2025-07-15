@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
-import './style.css';
-import { useNavigate } from 'react-router-dom'; // ✅ Importa o hook
-
+import { ButtonForgotPasswordStyled } from './style.js';
+import { useNavigate } from 'react-router-dom'; 
 export default function ButtonForgotPassword() {
-     const navigate = useNavigate(); // ✅ Instancia o hook
+     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/forgotpassword'); // ✅ Redireciona para /ForgotPassword
+        navigate('/forgotpassword');
     };
 
     return(
         <div>
-            <button className="buttonforgotpassword" onClick={handleClick}>
+            <ButtonForgotPasswordStyled onClick={handleClick}>
                 Forgot your Password?
-        </button>
+            </ButtonForgotPasswordStyled>
         </div>
         
     )

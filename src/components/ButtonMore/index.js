@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
-import './style.css';
+import React from 'react';
+import { ButtonMoreStyled, ButtonMoreText } from './style.js';
 
 export default function ButtonMore() {
-    return(
+    return (
         <div>
-            <button className="buttonmore">
-                <i className="bi bi-list"></i> More
-            </button>
+            <ButtonMoreStyled>
+                <i className="bi bi-list"></i>
+                <ButtonMoreText>More</ButtonMoreText>
+            </ButtonMoreStyled>
         </div>
-    )
+    );
 }

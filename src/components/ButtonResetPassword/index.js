@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import './style.css';
-import { useNavigate } from 'react-router-dom'; // ✅ Importa o hook
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { ButtonResetPasswordStyled } from './style.js';
 
 export default function ButtonResetPassword() {
-     const navigate = useNavigate(); // ✅ Instancia o hook
+    const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/login'); // ✅ Redireciona para /login
+        navigate('/login');
     };
-    return(
+
+    return (
         <div>
-            <button className="buttonresetpassword" onClick={handleClick}>
-                 Reset your password
-        </button>
+            <ButtonResetPasswordStyled onClick={handleClick}>
+                Reset your password
+            </ButtonResetPasswordStyled>
         </div>
-        
-    )
+    );
 }

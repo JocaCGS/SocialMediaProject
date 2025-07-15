@@ -3,40 +3,34 @@ import './style.css';
 import ButtonLogin from '../../components/ButtonLogin';
 import ButtonSignUp from '../../components/ButtonSignUp';
 import ButtonForgotPassword from '../../components/ButtonForgotPassword';
+import PasswordBox from '../../components/PasswordBox';
+import UsernameBox from '../../components/UsernameBox';
 
 export default function Login() {
   return (
     <div className="login-page">
       <div className="login-box">
-        <h2>Social Media Project</h2>
-        <h3>Log in to continue</h3>
-        <p>Enter your email and password to access.</p>
 
-        <input
-          type="email"
-          placeholder="Email"
-          className="login-input"
-        />
+        <div className="login-title">
+          <h1>Social Media Project</h1>
+        </div> 
 
-        <input
-          type="password"
-          placeholder="Password"
-          className="login-input"
-        />
+        <div className="login-subtitle">
+          <span className='logintext'>Log in to continue</span>
+          <span className='logintext2'>Enter your email and password to access.</span>
+        </div>
 
-        <div className="login-login">
+        <div className='login-input'>
+          <UsernameBox/>
+          <PasswordBox/>
+          <ButtonForgotPassword />
           <ButtonLogin />
         </div>
 
-        <div className="login-forgot-password">
-          <ButtonForgotPassword />
-        </div>
-
         <div className="login-signup">
-          <ButtonSignUp />
+          Don't have an account? <ButtonSignUp />
         </div>
 
-        <h4>Don't have an account?</h4>
 
       </div>
     </div>

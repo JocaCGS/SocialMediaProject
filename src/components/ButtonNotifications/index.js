@@ -1,17 +1,20 @@
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './style.css';
+import { ButtonNotificationsStyled, ButtonNotificationsText } from './style.js';
 
 export default function ButtonNotifications() {
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
 
     const handleClick = () => {
         navigate('/notifications');
     };
-    return(
+
+    return (
         <div>
-            <button className="buttonnotifications" onClick={handleClick}>
-                <i className="bi bi-bell"></i> Notifications
-            </button>
+            <ButtonNotificationsStyled onClick={handleClick}>
+                <i className="bi bi-bell"></i>
+                <ButtonNotificationsText>Notifications</ButtonNotificationsText>
+            </ButtonNotificationsStyled>
         </div>
-    )
+    );
 }

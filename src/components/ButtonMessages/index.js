@@ -1,18 +1,20 @@
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './style.css';
+import { ButtonMessagesStyled, ButtonMessagesText } from './style.js';
 
 export default function ButtonMessages() {
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
 
     const handleClick = () => {
         navigate('/chat');
     };
-    return(
+
+    return (
         <div>
-            <button className="buttonmessages" onClick={handleClick}>
-                <i className="bi bi-chat"></i> Messages
-            </button>
+            <ButtonMessagesStyled onClick={handleClick}>
+                <i className="bi bi-chat"></i>
+                <ButtonMessagesText>Messages</ButtonMessagesText>
+            </ButtonMessagesStyled>
         </div>
-        
-    )
+    );
 }
